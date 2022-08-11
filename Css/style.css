@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url("/Images/retro-living-room-interior-design.jpg");
+   background-position: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;   
+   font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.navbar div .nav-logo{
+    font-size: 30px;
+}
+.navbar .grow-list .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar .grow-list .list .list-item{
+    margin: 0 30px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.navbar .grow-list::after {
+    content: "";
+    height: 2px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero .left{
+    /* border: 1px solid red; */
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.hero .left .heading{
+    color: #ffffff;
+    font-size: 50px;
+}
+.hero .left .learnmore{
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 60px;
+    margin-top: 70px;
+    text-align: center;
+    border: 2.8px solid #ffffff;
+    border-radius: 40px;
+    font-weight: 600;
+}
+.hero .right{
+    position: relative;
+    
+}
+.hero .right .square{
+    background-color: rgba(255, 255, 255, .2);
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px;
+    padding: 10px 20px;
+    height: 160px;
+    
+}
+.hero .right .square:last-child{
+    background-color: rgba(255, 255, 255, .2);
+    margin-bottom: 20px;
+    position: relative;
+    width: 250px;
+    padding: 10px 20px;
+    height: 135px;
+}
+.hero .right .square:nth-child(1){
+    right: 120px;
+   
+}
+.hero .right .square:nth-child(2) {
+    right: 500px;
+    top: 100px;
+    width: 300px;
+    height: 160px;
+}
+.right .square .icon{
+    background-color: #FFFFFF;
+    height: 40px;
+    width: 80px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.right .square .icon i{
+    font-size: 1.6rem;
+}
+.right .square p{
+    color: #ffffff;
+    font-size: 15px;
+}
+.square:first-child .circle-line {
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    background-color: #FFFFFF;
+    top: 160px;
+    left: 220px;
+}
+
+.square:last-child .circle-line {
+    position: absolute;
+    height: 70px;
+    width: 2px;
+    background-color: #FFFFFF;
+    right: -36px;
+    top: 20px;
+    transform: rotate(-90deg);
+}
+.circle-line .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    bottom: 0;
+    left: -8px;
+}
