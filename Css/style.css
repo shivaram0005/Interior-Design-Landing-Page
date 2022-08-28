@@ -43,6 +43,9 @@ body{
     display: block;
     margin-top: 40px;
 }
+.navbar .barss{
+    display: none;
+}
 .hero{
     display: flex;
     flex-direction: row;
@@ -146,4 +149,36 @@ body{
     background-color: #FFFFFF;
     bottom: 0;
     left: -8px;
+}
+
+@media screen and (max-width:1300px) {
+    .navbar .grow-list{
+        display: none;
+    }
+    .navbar  .barss{
+        display: block;
+    }
+}
+@media screen and (max-width:1200px) {
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero .left .heading{
+        font-size: 25px;
+    }
+    .hero .left .learnmore{
+        background-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        padding: 15px 30px;
+        margin-top: 70px;
+        text-align: center;
+        border: 2.8px solid #ffffff;
+        border-radius: 40px;
+        font-weight: 600;
+    }
+    .hero .right .square:nth-child(2) {
+      visibility: hidden;
+    }
 }
